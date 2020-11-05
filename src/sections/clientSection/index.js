@@ -14,7 +14,6 @@ export default props => {
           : { top: "90px", horizontal: "131.5px" }
       }
     >
-      <SectionBlock name="clientele" mobile={mobile} />
       <SectionBlock name="Partners" mobile={mobile} />
     </Box>
   )

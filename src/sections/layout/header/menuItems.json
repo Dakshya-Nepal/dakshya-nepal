@@ -2,6 +2,5 @@
   { "label": "Products", "url": "/products" },
   { "label": "Blogs", "url": "/blog" },
   { "label": "About", "url": "/about" },
-  { "label": "Careers", "url": "/careers" },
-  { "label": "Language: क", "url": "#" }
+  { "label": "Careers", "url": "/careers" }
 ]

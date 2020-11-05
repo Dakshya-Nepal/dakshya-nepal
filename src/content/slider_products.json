@@ -1,20 +1,26 @@
 [
   {
-  "name": "Smart School",
-  "price": "200",
-  "image": "/illustrations/Girl on a chair.svg",
-  "url": "#"
+    "name": "Smart School",
+    "price": "",
+    "image": "/images/products/ss.svg",
+    "url": "/products/smart-school"
   },
   {
-    "name": "Online Tuition",
-    "price": "200",
-    "image": "/illustrations/Online classes.svg",
-    "url": "#"
+    "name": "Qbex",
+    "price": "",
+    "image": "/images/products/qbx.svg",
+    "url": "products/qbex"
+  },
+  {
+    "name": "Kalam CMS",
+    "price": "",
+    "image": "/images/products/cms.svg",
+    "url": "/products/kalam-cms"
   },
   {
     "name": "Guidance Counseling",
-    "price": "200",
-    "image": "/illustrations/product-card-guidance.svg",
-    "url": "#"
+    "price": "",
+    "image": "/images/products/gc.svg",
+    "url": "/products/guidance-counseling"
   }
 ]
