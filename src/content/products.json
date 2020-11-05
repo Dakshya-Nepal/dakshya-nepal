@@ -6,6 +6,12 @@
     "image": "/images/products/ss.svg"
   },
   {
+    "name": "Qbex",
+    "price": "",
+    "link": "/products/qbex",
+    "image": "/images/products/qbx.svg"
+  },
+  {
     "name": "Kalam CMS",
     "price": "",
     "link": "/products/kalam-cms",

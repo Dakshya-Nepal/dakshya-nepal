@@ -17,7 +17,7 @@ export default ({ data, mobile }) => {
       <Box
         background="p1-l"
         overflow="hidden"
-        width={mobile ? "100%" : "40%"}
+        width="40%"
         pad={{ top: "medium" }}
       >
         <Image
@@ -34,8 +34,13 @@ export default ({ data, mobile }) => {
         <Text code="subtext-r" size="small" color="b2">
           {data.desc}
         </Text>
-        <Box width={mobile ? "100%" : "xsmall"}>
-          <Button secondary label="Apply" onClick={() => setApply(true)} />
+        <Box width={mobile ? "100%" : "small"}>
+          <Button
+            secondary
+            label="Apply"
+            alignSelf="start"
+            onClick={() => setApply(true)}
+          />
         </Box>
       </Box>
       {apply && <ApplyConsultant setApply={setApply} />}
