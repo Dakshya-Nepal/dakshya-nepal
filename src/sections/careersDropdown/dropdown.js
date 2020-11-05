@@ -57,7 +57,7 @@ export default ({ info, active }) => {
             <Text code="sub-r" size="small" color="b2" className="jobDetails">
               <div dangerouslySetInnerHTML={{ __html: info.responsibilites }} />
             </Text>
-            <Box width={mobile ? "100%" : "small"}>
+            <Box width={mobile ? "100%" : "xsmall"}>
               <Button
                 secondary
                 label="Apply"
