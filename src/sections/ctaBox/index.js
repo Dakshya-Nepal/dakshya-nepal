@@ -56,10 +56,9 @@ export default ({ marginBottom }) => {
               <Button primary label="explore careers" />
               <Button
                 secondary
-                label="Join as consultant"
+                label="Join as Counselor"
                 onClick={() => setApply(true)}
               />
-              <Button secondary label="Join as online tutor" />
             </Box>
           </Box>
         </Box>

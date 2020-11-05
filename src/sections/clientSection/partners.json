@@ -1,0 +1,22 @@
+[
+  {
+    "name": "StudynLearn",
+    "image": "/images/partners/Studynlearn.png",
+    "url": "https://www.studynlearn.com/"
+  },
+  {
+    "name": "Tater Group",
+    "image": "/images/partners/TaterGroup.jpg",
+    "url": "https://tater-group.com/"
+  },
+  {
+    "name": "Qbex",
+    "image": "/images/partners/Qbex.svg",
+    "url": "http://qbex.com.np/"
+  },
+  {
+    "name": "Buzzy Tech",
+    "image": "/images/partners/BuzzyTech.png",
+    "url": "https://buzzytech.org/"
+  }
+]
