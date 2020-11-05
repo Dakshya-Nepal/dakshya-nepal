@@ -4,6 +4,7 @@ import Heading from "../../components/heading"
 import Text from "../../components/text"
 import Button from "../../components/button"
 import ApplyConsultant from "../applyConsultant"
+import { Link } from "gatsby"
 
 export default ({ marginBottom }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
