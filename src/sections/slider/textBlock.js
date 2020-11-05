@@ -10,10 +10,13 @@ export default ({ mobile }) => {
     <Box
       pad={mobile ? "0px" : { vertical: "34px", right: "large" }}
       width={mobile ? "100%" : "40%"}
-      align={mobile ? "center" : null}
     >
-      <Heading code={3}>We Believe In</Heading>
-      <Heading code={1}>Skilled Nepal</Heading>
+      <Heading textAlign={mobile ? "center" : "left"} code={3}>
+        We Believe In
+      </Heading>
+      <Heading textAlign={mobile ? "center" : "left"} code={1}>
+        Skilled Nepal
+      </Heading>
       <Text
         code="subtext-r"
         color="b2"
@@ -27,13 +30,10 @@ export default ({ mobile }) => {
         and effective.
       </Text>
 
-      <Link to={"/products"}>
-        <Button
-          selfAlign={mobile ? null : "start"}
-          as="span"
-          primary
-          label="Explore Products"
-        />
+      <Link to={"/products"} style={{ textDecoration: "none" }}>
+        <Box alignSelf="center" width={mobile ? "100%" : "small"}>
+          <Button as="span" primary label="Explore Products" />
+        </Box>
       </Link>
     </Box>
   )
