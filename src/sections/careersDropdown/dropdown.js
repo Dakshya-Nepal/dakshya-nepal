@@ -50,11 +50,10 @@ export default ({ info, active }) => {
                 dangerouslySetInnerHTML={{ __html: info.responsibilites.value }}
               />
             </Text>
-            <Box width={mobile ? "100%" : "small"}>
+            <Box width={mobile ? "100%" : "xsmall"}>
               <Button
                 secondary
                 label="Apply"
-                alignSelf="start"
                 onClick={() => openForm(info.position.value)}
               />
             </Box>

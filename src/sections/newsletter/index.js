@@ -75,7 +75,7 @@ export default props => {
                 gap="small"
                 flex="grow"
               >
-                <Box>
+                <Box width={mobile ? "100%" : "medium"}>
                   <FormField
                     placeholder="Your Email"
                     name="email"
