@@ -1,14 +1,8 @@
 [
   {
-    "image": "/images/online-classes.svg",
-    "background": "end",
-    "title": "Join as online tutor",
-    "desc": "If you have a passion in teaching and want to educate and enlighten students with your personalized way of teaching, we would love to have your expertise. "
-  },
-  {
-    "image": "/images/guidance-counseling.svg",
+    "image": "images/guidance-counseling.svg",
     "background": "start",
-    "title": "Join as consultant",
+    "title": "Join as Counselor",
     "desc": "If you want to guide and counsel a student or a parent through the hardships faced and help them resolve the issues, join us as a guidance counselor and help spread happiness."
   }
 ]
