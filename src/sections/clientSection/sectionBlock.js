@@ -3,7 +3,6 @@ import { Image, Box } from "grommet"
 import Heading from "../../components/heading"
 import SlideSelector from "./slideSelector"
 import partnerData from "./partners.json"
-import { Link } from "gatsby"
 
 export default ({ name, mobile }) => {
   return (
@@ -20,9 +19,9 @@ export default ({ name, mobile }) => {
               height="xsmall"
               justify="center"
             >
-              <Link to={partner.url}>
+              <a href={partner.url}>
                 <Image src={partner.image} fill="horizontal" />
-              </Link>
+              </a>
             </Box>
           </Box>
         ))}
