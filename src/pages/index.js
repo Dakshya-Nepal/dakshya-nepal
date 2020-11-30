@@ -30,7 +30,7 @@ export default () => {
       <Seo title="Home" />
       <Slider />
       <Features />
-      <Blog title="blog" url="/blog" data={data} />
+      <Blog title="blog" url="/blog" data={blogData} loading={loading} />
       <CtaBox />
       <ClientSection />
       <Newsletter />
