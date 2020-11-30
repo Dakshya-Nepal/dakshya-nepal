@@ -12,11 +12,12 @@ import chevUp from "../../../components/icons/chevron-up"
 import chevDown from "../../../components/icons/chevron-down"
 
 export default props => {
+  const url = typeof window === "undefined" ? "" : window.location.href
+  console.log(url)
   const [open, setOpen] = React.useState(false)
   const Icon = open ? chevUp : chevDown
   const mobile = React.useContext(ResponsiveContext) === "small"
-  let name = props.link.match("[^/]+$")
-  name = name[0].replace("-", " ")
+  let name = url.match("/.*/(.*)")
 
   return (
     <>
@@ -32,7 +33,7 @@ export default props => {
             size="small"
             style={{ textTransform: "capitalize" }}
           >
-            {name}
+            {name[1].replace("-", " ") || "Products"}
           </Heading>
           <Icon color="b1" />
         </Box>

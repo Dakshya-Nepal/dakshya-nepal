@@ -5,7 +5,7 @@ import Dropdown from "./dropdown"
 
 export default ({ data }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
-  console.log(data)
+
   return (
     <Box
       pad={

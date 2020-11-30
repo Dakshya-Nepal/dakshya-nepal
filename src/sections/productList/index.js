@@ -14,7 +14,7 @@ export default props => {
           : { top: "40px", horizontal: "131px" }
       }
     >
-      <Heading code={2}>Products</Heading>
+      <Heading code={2}>{props.title || "Products"}</Heading>
       <Grid
         margin={{ top: "42px" }}
         columns={mobile ? "100%" : "30%"}

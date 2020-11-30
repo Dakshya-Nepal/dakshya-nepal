@@ -25,9 +25,10 @@ function SEO({ description, lang, meta, title, image }) {
       }
     `
   )
+  const url = typeof window === "undefined" ? "" : window.location
 
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = image || site.siteMetadata.socialImage
+  const metaImage = url + (image || site.siteMetadata.socialImage)
 
   return (
     <Helmet

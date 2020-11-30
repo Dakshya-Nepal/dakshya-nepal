@@ -1,5 +1,6 @@
 import React from "react"
 import { Box, ResponsiveContext, Image } from "grommet"
+import submitForm from "../../utils/submitForm"
 import Heading from "../../components/heading"
 import FormSideImage from "../../../static/illustrations/Guidance Counseling.svg"
 import FormField from "../../components/formField"
@@ -10,8 +11,7 @@ import Notification from "../notification"
 
 export default props => {
   const mobile = React.useContext(ResponsiveContext) === "small"
-  const url =
-    process.env.GATSBY_API_URL + "/api/forms/submit/guidanceCounseling"
+  const url = "/api/forms/submit/guidanceCounseling"
 
   const [success, setSuccess] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -52,16 +52,7 @@ export default props => {
           available: "",
         }}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
-          const response = await fetch(url, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Cockpit-Token": process.env.GATSBY_API_KEY,
-            },
-            body: JSON.stringify({ form: values }),
-          })
-
-          if (response.ok) {
+          if (await submitForm(values, url)) {
             setSuccess(true)
             setSubmitting(false)
             resetForm()
@@ -188,11 +179,17 @@ export default props => {
           </form>
         )}
       </Formik>
-      {success && <Notification message="Message Sent Successfully" />}
+      {success && (
+        <Notification
+          message="Message Sent Successfully"
+          closeMain={setSuccess}
+        />
+      )}
       {error && (
         <Notification
           message="Could not send message. Please try again!"
           error
+          closeMain={setError}
         />
       )}
     </Box>

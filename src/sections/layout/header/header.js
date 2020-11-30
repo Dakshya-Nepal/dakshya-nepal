@@ -7,7 +7,7 @@ import ProductMenu from "./productMenu"
 export default ({ children }) => {
   const size = React.useContext(ResponsiveContext)
   const url = typeof window !== "undefined" ? window.location.href : ""
-  console.log(url)
+
   return (
     <Header
       background="w1"

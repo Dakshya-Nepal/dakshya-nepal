@@ -5,11 +5,12 @@ import FormField from "../../components/formField"
 import Button from "../../components/button"
 import { Formik } from "formik"
 import Notification from "../notification"
+import submitForm from "../../utils/submitForm"
 
 export default props => {
   const mobile = React.useContext(ResponsiveContext) === "small"
 
-  const url = process.env.GATSBY_API_URL + "/api/forms/submit/emailSubscriber"
+  const url = "/api/forms/submit/emailSubscriber"
 
   const [success, setSuccess] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -44,19 +45,7 @@ export default props => {
               for: "Job Updates",
             }}
             onSubmit={async (values, { setSubmitting, resetForm }) => {
-              const response = await fetch(url, {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  "Cockpit-Token": process.env.GATSBY_API_KEY,
-                },
-                mode: "cors",
-                body: JSON.stringify({ form: values }),
-              })
-
-              console.log(response)
-
-              if (response.ok) {
+              if (await submitForm(values, url)) {
                 setSuccess(true)
                 setSubmitting(false)
                 resetForm()
@@ -103,11 +92,17 @@ export default props => {
           </Formik>
         </Box>
       </Box>
-      {success && <Notification message="Message Sent Successfully" />}
+      {success && (
+        <Notification
+          message="Message Sent Successfully"
+          closeMain={setSuccess}
+        />
+      )}
       {error && (
         <Notification
           message="Could not send message. Please try again!"
           error
+          closeMain={setError}
         />
       )}
     </Box>

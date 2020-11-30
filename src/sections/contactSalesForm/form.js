@@ -4,11 +4,11 @@ import FormField from "../../components/formField"
 import Button from "../../components/button"
 import { Formik } from "formik"
 import Notification from "../notification"
+import submitForm from "../../utils/submitForm"
 
 export default ({ product }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
-  const url =
-    process.env.GATSBY_API_URL + "/api/forms/submit/productContactForm"
+  const url = "/api/forms/submit/productContactForm"
 
   const [success, setSuccess] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -25,17 +25,7 @@ export default ({ product }) => {
           product: product,
         }}
         onSubmit={async (values, { setSubmitting, resetForm }) => {
-          const response = await fetch(url, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Cockpit-Token": process.env.GATSBY_API_KEY,
-            },
-            mode: "cors",
-            body: JSON.stringify({ form: values }),
-          })
-
-          if (response.ok) {
+          if (await submitForm(values, url)) {
             setSuccess(true)
             setSubmitting(false)
             resetForm()
@@ -122,11 +112,17 @@ export default ({ product }) => {
           </form>
         )}
       </Formik>
-      {success && <Notification message="Message Sent Successfully" />}
+      {success && (
+        <Notification
+          message="Message Sent Successfully"
+          closeMain={setSuccess}
+        />
+      )}
       {error && (
         <Notification
           message="Could not send message. Please try again!"
           error
+          closeMain={setError}
         />
       )}
     </Box>

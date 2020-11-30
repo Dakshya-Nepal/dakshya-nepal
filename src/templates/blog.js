@@ -25,7 +25,7 @@ export default ({ data: { post }, location }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
 
   return (
-    <Layout>
+    <Layout active="blogs">
       <SEO title={post.name} />
       <Box pad={mobile ? { horizontal: "16px" } : { horizontal: "268px" }}>
         <Box gap="small" direction="row" pad={{ top: "32px" }}>

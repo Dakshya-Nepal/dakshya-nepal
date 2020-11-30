@@ -5,10 +5,13 @@ import Text from "../../components/text"
 import Exit from "../../components/icons/exit"
 import { Validate, Alert } from "grommet-icons"
 
-export default ({ error, message }) => {
+export default ({ error, message, closeMain }) => {
   const [open, setOpen] = React.useState(true)
   const Icon = error ? Alert : Validate
-
+  const handleClose = () => {
+    setOpen(false)
+    closeMain(false)
+  }
   return (
     <Box style={{ position: "fixed", bottom: 0 }} width="80%">
       <Collapsible open={open}>
@@ -29,7 +32,7 @@ export default ({ error, message }) => {
               </Box>
             </Box>
           </Box>
-          <Box onClick={() => setOpen(false)}>
+          <Box onClick={handleClose}>
             <Exit />
           </Box>
         </Box>

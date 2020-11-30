@@ -45,6 +45,17 @@ export default ({ info, active }) => {
             <Text code="sub-m" size="small">
               Requirement: {info.requirement.value}
             </Text>
+            <Text code="sub-m" size="small">
+              Job Specifications
+            </Text>
+            <Text code="sub-r" size="small" color="b2" className="jobDetails">
+              <div
+                dangerouslySetInnerHTML={{ __html: info.specifications.value }}
+              />
+            </Text>
+            <Text code="sub-m" size="small">
+              Job Responsibilities
+            </Text>
             <Text code="sub-r" size="small" color="b2" className="jobDetails">
               <div
                 dangerouslySetInnerHTML={{ __html: info.responsibilites.value }}

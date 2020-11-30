@@ -31,6 +31,9 @@ export const query = graphql`
         responsibilites {
           value
         }
+        specifications {
+          value
+        }
         experience {
           value
         }

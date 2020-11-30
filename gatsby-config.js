@@ -7,7 +7,7 @@ module.exports = {
     title: `Dakshya Nepal`,
     description: `We Believe In Skilled Nepal`,
     author: `@dakshyanepal`,
-    socialImage: "/images/social.png",
+    socialImage: "images/social.png",
   },
   plugins: [
     `gatsby-plugin-styled-components`,

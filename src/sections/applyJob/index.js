@@ -7,11 +7,12 @@ import Exit from "../../components/icons/exit"
 import { Formik } from "formik"
 import Notification from "../notification"
 import { RemoveScroll } from "react-remove-scroll"
+import submitForm from "../../utils/submitForm"
 
 export default props => {
   const mobile = React.useContext(ResponsiveContext) === "small"
 
-  const url = process.env.GATSBY_API_URL + "/api/forms/submit/jobApplication"
+  const url = "/api/forms/submit/jobApplication"
 
   const [success, setSuccess] = React.useState(false)
   const [error, setError] = React.useState(false)
@@ -25,7 +26,10 @@ export default props => {
       >
         <Box direction="row">
           <Box pad="24px" gap="small" width={mobile ? "100%" : "50%"}>
-            <Box direction="row" margin={{ bottom: "large" }}>
+            <Box
+              direction="row"
+              margin={mobile ? { bottom: "large" } : { bottom: "small" }}
+            >
               <Heading code={4}>Apply for {props.position}</Heading>
               <ResponsiveContext.Consumer>
                 {size =>
@@ -52,17 +56,7 @@ export default props => {
                 position: props.position,
               }}
               onSubmit={async (values, { setSubmitting, resetForm }) => {
-                const response = await fetch(url, {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                    "Cockpit-Token": process.env.GATSBY_API_KEY,
-                  },
-                  mode: "cors",
-                  body: JSON.stringify({ form: values }),
-                })
-
-                if (response.ok) {
+                if (await submitForm(values, url)) {
                   setSuccess(true)
                   setSubmitting(false)
                   resetForm()
@@ -153,11 +147,17 @@ export default props => {
                 </form>
               )}
             </Formik>
-            {success && <Notification message="Message Sent Successfully" />}
+            {success && (
+              <Notification
+                message="Message Sent Successfully"
+                closeMain={setSuccess}
+              />
+            )}
             {error && (
               <Notification
                 message="Could not send message. Please try again!"
                 error
+                closeMain={setError}
               />
             )}
           </Box>

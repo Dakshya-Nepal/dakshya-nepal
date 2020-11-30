@@ -121,7 +121,6 @@ select:focus {
 }
 
 .jobDetails ul{
-    list-style: square;
-    margin-block-start: 1em;
+    list-style: disc;
     margin-left: 1.2em;
 }
