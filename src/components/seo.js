@@ -1,16 +1,8 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
-function SEO({ description, lang, meta, title, image }) {
+function SEO({ description, lang, meta, image: metaImage, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,17 +11,16 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
+            keywords
+            siteUrl
             socialImage
           }
         }
       }
     `
   )
-  const url = typeof window === "undefined" ? "" : window.location
-
   const metaDescription = description || site.siteMetadata.description
-  const metaImage = url + (image || site.siteMetadata.socialImage)
-
+  const image = `${site.siteMetadata.siteUrl}${site.siteMetadata.socialImage}`
   return (
     <Helmet
       htmlAttributes={{
@@ -43,12 +34,12 @@ function SEO({ description, lang, meta, title, image }) {
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
+          name: "keywords",
+          content: site.siteMetadata.keywords.join(","),
         },
         {
-          property: `og:image`,
-          content: metaImage,
+          property: `og:title`,
+          content: title,
         },
         {
           property: `og:description`,
@@ -57,14 +48,6 @@ function SEO({ description, lang, meta, title, image }) {
         {
           property: `og:type`,
           content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:image`,
-          content: metaImage,
         },
         {
           name: `twitter:creator`,
@@ -78,22 +61,35 @@ function SEO({ description, lang, meta, title, image }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat([
+          {
+            property: "og:image",
+            content: image,
+          },
+          {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+        ])
+        .concat(meta)}
     />
   )
 }
-
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 }
-
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.shape({
+    src: PropTypes.string.isRequired,
+    height: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired,
+  }),
 }
-
 export default SEO

@@ -35,11 +35,10 @@ export default props => {
             sesh={cls.sesh}
             price={cls.price}
             course={cls.course}
-            mobile={mobile}
             key={index}
           />
         ))}
-        <NewTutor mobile={mobile} />
+        <NewTutor />
       </ComponentSlider>
     </Box>
   )

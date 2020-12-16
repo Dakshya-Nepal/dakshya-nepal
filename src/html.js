@@ -29,6 +29,7 @@ export default function HTML(props) {
             left: 0,
             right: 0,
             zIndex: 9999999,
+            overflow: "hidden",
           }}
         >
           <div

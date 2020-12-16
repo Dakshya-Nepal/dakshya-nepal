@@ -1,24 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Box, ResponsiveContext } from "grommet"
+import { Box, Grid, ResponsiveContext } from "grommet"
 import Heading from "../../components/heading"
 import Button from "../../components/button"
 import BlogCard from "./blogCard"
 import ComponentSlider from "../componentSlider"
+import BlogCardLoading from "../../components/blogCardLoading"
 
-export default ({ title, url, data }) => {
+export default ({ loading, title, url, data }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
-
-  const blogPosts = []
-  data.allCockpitBlog.edges.map(data =>
-    blogPosts.push({
-      category: data.node.category.value,
-      title: data.node.title.value,
-      minRead: data.node.timeToRead.value,
-      image: data.node.coverImage.value.childImageSharp.fluid,
-      link: data.node.fields.path,
-    })
-  )
 
   return (
     <Box>
@@ -41,20 +31,33 @@ export default ({ title, url, data }) => {
             ) : null}
           </Box>
         </Box>
+        {loading ? (
+          <Grid
+            margin={mobile ? { top: "16px" } : { top: "48px" }}
+            columns={mobile ? "100%" : "31%"}
+            gap="small"
+          >
+            {mobile ? (
+              <BlogCardLoading />
+            ) : (
+              [22, 66, 99].map(index => <BlogCardLoading key={index} />)
+            )}
+          </Grid>
+        ) : null}
       </Box>
       <ComponentSlider
         margin={mobile ? { top: "16px" } : { top: "48px" }}
         gap="small"
       >
-        {blogPosts.map((post, index) => (
+        {data.map((post, index) => (
           <BlogCard
             key={index}
             category={post.category}
             mobile={mobile}
             title={post.title}
-            image={post.image}
-            minRead={post.minRead}
-            link={post.link}
+            image={post.coverImage.path}
+            minRead={post.timeToRead}
+            link={`/blog/${post.slug}`}
           />
         ))}
       </ComponentSlider>

@@ -25,7 +25,6 @@ export default props => {
             occupation={data.occupation}
             message={data.message}
             image={data.image}
-            mobile={mobile}
             key={index}
           />
         ))}

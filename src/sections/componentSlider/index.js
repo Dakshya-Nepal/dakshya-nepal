@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, ResponsiveContext } from "grommet"
+import { Box, ResponsiveContext, Grid } from "grommet"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -27,14 +27,15 @@ export default props => {
             </Slider>
           </Box>
         ) : (
-          <Box
+          <Grid
             {...props}
             direction="row"
             gap="medium"
             pad={{ horizontal: "131.5px" }}
+            columns="30%"
           >
             {props.children}
-          </Box>
+          </Grid>
         )
       }
     </ResponsiveContext.Consumer>

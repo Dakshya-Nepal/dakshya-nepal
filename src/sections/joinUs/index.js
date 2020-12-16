@@ -16,11 +16,11 @@ export default props => {
       }
     >
       <Heading code={2}>Careers</Heading>
-      <Grid pad={{ top: "24px" }} columns={"100%"} gap="medium">
+      <Box pad={{ top: "24px" }} gap="medium">
         {joinus.map((data, index) => (
           <JoinUs data={data} key={index} mobile={mobile} />
         ))}
-      </Grid>
+      </Box>
     </Box>
   )
 }

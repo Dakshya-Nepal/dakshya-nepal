@@ -59,7 +59,7 @@ export default props => {
           </a>
         </Box>
         <Text color="g1" code="subtext-r" size="small">
-          #सक्षम-नेपाल
+          #सक्षमनेपाल
         </Text>
         <Box direction="column" gap="small">
           <Text code="subtext-r" color="g1" size="small">

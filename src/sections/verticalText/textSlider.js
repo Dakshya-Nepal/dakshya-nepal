@@ -11,7 +11,7 @@ export default ({ textList }) => {
     centerMode: true,
     slidesToShow: 1,
     centerPadding: "38px",
-    speed: 600,
+    autoplaySpeed: 1500,
     slidesToScroll: 1,
     vertical: true,
     adaptiveHeight: true,

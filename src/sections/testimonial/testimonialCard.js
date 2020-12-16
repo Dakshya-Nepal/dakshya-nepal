@@ -4,14 +4,9 @@ import { Avatar, Box } from "grommet"
 import Heading from "../../components/heading"
 import Card from "../../components/card"
 
-export default ({ name, occupation, message, image, mobile }) => {
+export default ({ name, occupation, message, image }) => {
   return (
-    <Card
-      pad="24px"
-      border={{ color: "w2" }}
-      width={mobile ? "98%" : "33.33%"}
-      gap="medium"
-    >
+    <Card pad="24px" border={{ color: "w2" }} width="100%" gap="medium">
       <Text code="subtext-r" size="small">
         {message}
       </Text>

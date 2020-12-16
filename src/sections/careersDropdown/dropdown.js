@@ -32,7 +32,7 @@ export default ({ info, active }) => {
           round={open ? { corner: "top", size: "8px" } : { size: "8px" }}
           border={open ? { side: "bottom", size: "2px" } : ""}
         >
-          <Heading code={4}>{info.position.value}</Heading>
+          <Heading code={4}>{info.position}</Heading>
           <Box align="end" flex="grow">
             <Icon color="b1" alignSelf="end" />
           </Box>
@@ -40,32 +40,29 @@ export default ({ info, active }) => {
         <Collapsible open={open}>
           <Box pad="24px" gap="small">
             <Text code="sub-m" size="small">
-              Experience: {info.experience.value}
+              Experience: {info.experience}
             </Text>
             <Text code="sub-m" size="small">
-              Requirement: {info.requirement.value}
+              Requirement: {info.requirement}
             </Text>
             <Text code="sub-m" size="small">
               Job Specifications
             </Text>
             <Text code="sub-r" size="small" color="b2" className="jobDetails">
-              <div
-                dangerouslySetInnerHTML={{ __html: info.specifications.value }}
-              />
+              <div dangerouslySetInnerHTML={{ __html: info.specifications }} />
             </Text>
             <Text code="sub-m" size="small">
               Job Responsibilities
             </Text>
             <Text code="sub-r" size="small" color="b2" className="jobDetails">
-              <div
-                dangerouslySetInnerHTML={{ __html: info.responsibilites.value }}
-              />
+              <div dangerouslySetInnerHTML={{ __html: info.responsibilites }} />
             </Text>
             <Box width={mobile ? "100%" : "xsmall"}>
               <Button
                 secondary
                 label="Apply"
-                onClick={() => openForm(info.position.value)}
+                alignSelf="start"
+                onClick={() => openForm(info.position)}
               />
             </Box>
           </Box>

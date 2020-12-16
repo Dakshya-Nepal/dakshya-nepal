@@ -15,7 +15,7 @@ export default props => {
       }
     >
       <Grid
-        columns={mobile ? "full" : "medium"}
+        columns={mobile ? "full" : "49%"}
         gap={{ column: "small", row: "xlarge" }}
       >
         {features.map((data, index) => (

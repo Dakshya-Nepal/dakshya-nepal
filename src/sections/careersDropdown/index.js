@@ -2,8 +2,9 @@ import React from "react"
 import { Box, ResponsiveContext } from "grommet"
 import Heading from "../../components/heading"
 import Dropdown from "./dropdown"
+import Skeleton from "react-loading-skeleton"
 
-export default ({ data }) => {
+export default ({ data, loading }) => {
   const mobile = React.useContext(ResponsiveContext) === "small"
 
   return (
@@ -19,6 +20,7 @@ export default ({ data }) => {
         {data.map((data, index) => (
           <Dropdown info={data} key={index} active={index === 1} />
         ))}
+        {loading ? <Skeleton count={4} height={40} /> : null}
       </Box>
     </Box>
   )

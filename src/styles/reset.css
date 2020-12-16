@@ -78,7 +78,7 @@ select:focus {
     font-size: 20px;
     line-height: 32px;
     color: #000000;
-    margin-bottom: 32px;
+    margin: 32px 0;
 }
 
 .blogPost p strong {
@@ -93,13 +93,17 @@ select:focus {
     font-style: italic;
 }
 
-.blogPost blockquote p span:before {
+.blogPost blockquote:before {
     content: url("/images/quotation.svg");
 }
 
-.blogPost blockquote p span {
+.blogPost blockquote{
+    display: inline;
     font-style: italic;
     background: #ffd749;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
 }
 
 .noScrollBar::-webkit-scrollbar {
