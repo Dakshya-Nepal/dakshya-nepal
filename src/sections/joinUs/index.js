@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Grid, ResponsiveContext } from "grommet"
+import { Box, ResponsiveContext } from "grommet"
 import Heading from "../../components/heading"
 import JoinUs from "./joinus"
 import joinus from "./joinUsData.json"
