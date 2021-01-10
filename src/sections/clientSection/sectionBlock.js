@@ -8,7 +8,7 @@ import clientData from "./clients.json"
 export default ({ name, mobile }) => {
   const Data = name === "clientele" ? clientData : partnerData
   return (
-    <Box>
+    <Box width={mobile ? "100%" : "50%"}>
       <Heading code={2}>{name}</Heading>
       <SlideSelector>
         {Data.map((item, index) => (
