@@ -1,18 +1,14 @@
 [
   {
-    "name": "Auctor Orci Morbi",
-    "occupation": "Student",
-    "image": "images/test1.png",
-    "message": "Eu platea volutpat ornare aliquam quam quis auctor orci morbi imperdiet nisi pellentesque sit sed ultrices sem habitant sed in vulputate nulla odio id pharetra massa donec tincidunt ullamcorper ac felis massa porttitor..."
+    "name": "Prabin Shrestha",
+    "occupation": "Admin Director, Chanakya College of Management",
+    "image": "images/Chanakya-Mgmt@3x.png",
+    "message": "The Qbex team exhibited professionalism throughout the software package development and implementation period. They communicated regularly and understood our requirements exceptionally well. Even during the difficult lockdown period, we received excellent remote support to deploy the system. What amazed me was the work ethics of the team to deliver quality work with attention to details while remaining within a tight deadline. Choosing Qbex was a wise decision for us as digitalization has visibly improved our operational efficiency and effectiveness."
   },
   {
-    "name": "Congue Quam",
-    "occupation": "Parent",
-    "image": "images/test2.jpeg",
-    "message": "Volutpat ornare aliquam quam quis auctor orci morbi imperdiet nisi pellentesque sit sed ultrices sem habitant sed in vulputate nulla odio id pharetra massa donec tincidunt ullamcorper ac felis..." },
-  {
-    "name": "Faucibus Tristique",
-    "occupation": "Consultant",
-    "image": "images/test3.jpeg",
-    "message": "Purus proin egestas sit nunc et facilisi neque vitae, ut arcu pretium posuere nullam nunc mi faucibus tristique sed cras dui, congue quam amet amet, proin commodo nisl lobortis mauris, purus habitasse..."}
+    "name": "Sundar Budathoki",
+    "occupation": "Nepal Police School Chitwan",
+    "image": "images/nepal-police-Mgmt@3x.png",
+    "message": "The Software makes the overall performance of the school run smoothly especially dealing with the finance related transactions with the help of regular support staff. Multi processes can be carried out at the same time with ease and the security & back up of the information makes it more reliable. The thing that I like the most about Qbex is the speed and accuracy of report cards that it generates. We always receive excellent support from the Qbex team, especially during report card preparation and distribution. It saves our teachers a lot of time and effort."
+  }
 ]

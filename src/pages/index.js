@@ -7,6 +7,7 @@ import Features from "../sections/features"
 import Blog from "../sections/blog"
 import CtaBox from "../sections/ctaBox"
 import ClientSection from "../sections/clientSection"
+import Testimonial from "../sections/testimonial"
 import Newsletter from "../sections/newsletter"
 
 export default () => {
@@ -33,6 +34,7 @@ export default () => {
       <Blog title="blog" url="/blog" data={blogData} loading={loading} />
       <CtaBox />
       <ClientSection />
+      <Testimonial />
       <Newsletter />
     </Layout>
   )

@@ -3,13 +3,15 @@ import { Image, Box } from "grommet"
 import Heading from "../../components/heading"
 import SlideSelector from "./slideSelector"
 import partnerData from "./partners.json"
+import clientData from "./clients.json"
 
 export default ({ name, mobile }) => {
+  const Data = name === "clientele" ? clientData : partnerData
   return (
     <Box>
       <Heading code={2}>{name}</Heading>
       <SlideSelector>
-        {partnerData.map((partner, index) => (
+        {Data.map((item, index) => (
           <Box>
             <Box
               round="4px"
@@ -17,10 +19,11 @@ export default ({ name, mobile }) => {
               pad="xsmall"
               margin={mobile ? { right: "24px" } : { right: "0px" }}
               height="xsmall"
+              width="xsmall"
               justify="center"
             >
-              <a href={partner.url}>
-                <Image src={partner.image} fill="horizontal" />
+              <a href={item.url}>
+                <Image src={item.image} fill="horizontal" />
               </a>
             </Box>
           </Box>

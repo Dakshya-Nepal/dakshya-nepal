@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Chanakya",
+    "image": "/images/clients/1.png",
+    "url": "#"
+  },
+  {
+    "name": "NPS Chitwan",
+    "image": "/images/clients/2.png",
+    "url": "#"
+  },
+  {
+    "name": "NPS Dharan",
+    "image": "/images/clients/3.png",
+    "url": "#"
+  },
+  {
+    "name": "SEBS",
+    "image": "/images/clients/4.png",
+    "url": "#"
+  },
+  {
+    "name": "NPS Tanahun",
+    "image": "/images/clients/5.png",
+    "url": "#"
+  },
+  {
+    "name": "NPS Sanga",
+    "image": "/images/clients/6.png",
+    "url": "#"
+  },
+  {
+    "name": "Gauri Shankar",
+    "image": "/images/clients/7.png",
+    "url": "#"
+  },
+  {
+    "name": "BDS",
+    "image": "/images/clients/8.png",
+    "url": "#"
+  },
+  {
+    "name": "Gyan Bigyan",
+    "image": "/images/clients/9.png",
+    "url": "#"
+  },
+  {
+    "name": "Argakhachi",
+    "image": "/images/clients/10.png",
+    "url": "#"
+  }
+]
