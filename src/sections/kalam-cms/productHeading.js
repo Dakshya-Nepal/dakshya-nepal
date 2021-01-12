@@ -17,9 +17,9 @@ export default props => {
         Create, Manage, Modify and Publish your website with a powerful CMS
       </Heading>
       <Text margin={{ top: "16px" }} color="b2" code="sub-r">
-        Kalam CMS (Content Management System) is a website that comes with a
+        Dakshya CMS (Content Management System) is a website that comes with a
         dashboard/admin panel from where contents for the website can easily be
-        updated. Kalam CMS is meant for anyone including schools, colleges,
+        updated. Dakshya CMS is meant for anyone including schools, colleges,
         media organizations, bloggers, etc.
       </Text>
     </Box>

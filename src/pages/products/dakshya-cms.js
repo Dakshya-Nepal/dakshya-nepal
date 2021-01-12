@@ -7,7 +7,7 @@ import ProductShowcase from "../../sections/kalam-cms/productShowcase"
 import ContactSalesForm from "../../sections/contactSalesForm"
 
 export default () => {
-  const product = "Kalam CMS"
+  const product = "Dakshya CMS"
   return (
     <Layout active="products">
       <SEO title={product} />

@@ -14,7 +14,7 @@ export default props => {
           : { top: "90px", horizontal: "131.5px" }
       }
     >
-      <Heading code={2}>Why Kalam?</Heading>
+      <Heading code={2}>Why Dakshya CMS?</Heading>
       <Box gap="medium" pad={{ top: "32px" }}>
         {showcasedata.map((data, index) => (
           <ProductShowcaseCard
