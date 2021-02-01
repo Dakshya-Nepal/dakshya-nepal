@@ -21,6 +21,13 @@
     "email": "mailto::rajat.bhattarai@dakshyanepal.com"
   },
   {
+    "image": "images/team/nisha.jpeg",
+    "name": "Nisha Agrawal",
+    "position": "Project Manager",
+    "linkedin": "https://www.linkedin.com/in/nisha-agrawal-919a1111a/",
+    "email": "mailto::nisha.agrawal@dakshyanepal.com"
+  },
+  {
     "image": "images/team/srijan.png",
     "name": "Shrijan Dongol",
     "position": "Product Consultant",
@@ -28,17 +35,38 @@
     "email": "mailto:shrijandongol@gmail.com"
   },
   {
-    "image": "images/team/yogendra.jpeg",
-    "name": "Yogendra Rawal",
-    "position": "Developer",
-    "linkedin": "https://www.linkedin.com/in/yogendra-rawal-a5450186/",
-    "email": "mailto:yogendra.rawal@dakshyanepal.com"
+    "image": "images/team/manishh.jpeg",
+    "name": "Manish Mishra",
+    "position": "Business Development Manager",
+    "linkedin": "https://www.linkedin.com/in/manish-mishra-81674717a/",
+    "email": "mailto:manish.mishra@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/anup.jpeg",
+    "name": "Anup Devkota",
+    "position": "Digital Marketing Executive",
+    "linkedin": "https://www.linkedin.com/in/anup-devekota-4b9b87156/",
+    "email": "mailto:anup.devkota@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/rinuz.jpeg",
+    "name": "Rinuz Shrestha",
+    "position": "Business Development Executive",
+    "linkedin": "https://www.linkedin.com/in/rinuz-shrestha-84093714a/",
+    "email": "mailto:rinuz.shrestha@dakshyanepal.com"
   },
   {
     "image": "images/team/rakesh.jpeg",
     "name": "Rakesh Sah",
-    "position": "Developer Intern",
+    "position": "Developer",
     "linkedin": "https://www.linkedin.com/in/rakesh-sah-a3ab14147/",
     "email": "mailto:rakesh.sah@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/mahash.jpeg",
+    "name": "Mahesh Aryal",
+    "position": "Developer",
+    "linkedin": "https://www.linkedin.com/in/mahesh-aryal-292712135/",
+    "email": "mailto:mahesh.aryal@dakshyanepal.com"
   }
 ]
