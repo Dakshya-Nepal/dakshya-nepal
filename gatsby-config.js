@@ -9,9 +9,20 @@ module.exports = {
     author: `@dakshyanepal`,
     socialImage: "images/social.png",
     siteUrl: process.env.SITE_URL,
-    keywords: ["dakshya nepal", "dakshya cms", "smart school", "online tuition"],
+    keywords: [
+      "dakshya nepal",
+      "dakshya cms",
+      "smart school",
+      "online tuition",
+    ],
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-182147716-1",
+      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
