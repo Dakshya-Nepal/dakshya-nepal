@@ -28,6 +28,13 @@
     "email": "mailto::nisha.agrawal@dakshyanepal.com"
   },
   {
+    "image": "images/team/manish.jpeg",
+    "name": "Manish Mishra",
+    "position": "Business Development Manager",
+    "linkedin": "https://www.linkedin.com/in/manish-mishra-81674717a/",
+    "email": "mailto:manish.mishra@dakshyanepal.com"
+  },
+  {
     "image": "images/team/srijan.png",
     "name": "Shrijan Dongol",
     "position": "Product Consultant",
@@ -35,38 +42,66 @@
     "email": "mailto:shrijandongol@gmail.com"
   },
   {
-    "image": "images/team/manishh.jpeg",
-    "name": "Manish Mishra",
-    "position": "Business Development Manager",
-    "linkedin": "https://www.linkedin.com/in/manish-mishra-81674717a/",
-    "email": "mailto:manish.mishra@dakshyanepal.com"
-  },
-  {
     "image": "images/team/anup.jpeg",
     "name": "Anup Devkota",
-    "position": "Digital Marketing Executive",
+    "position": "UI/UX Designer",
     "linkedin": "https://www.linkedin.com/in/anup-devekota-4b9b87156/",
     "email": "mailto:anup.devkota@dakshyanepal.com"
   },
   {
     "image": "images/team/rinuz.jpeg",
     "name": "Rinuz Shrestha",
-    "position": "Business Development Executive",
+    "position": "Digital Marketing Executive",
     "linkedin": "https://www.linkedin.com/in/rinuz-shrestha-84093714a/",
     "email": "mailto:rinuz.shrestha@dakshyanepal.com"
   },
   {
-    "image": "images/team/rakesh.jpeg",
-    "name": "Rakesh Sah",
-    "position": "Developer",
-    "linkedin": "https://www.linkedin.com/in/rakesh-sah-a3ab14147/",
-    "email": "mailto:rakesh.sah@dakshyanepal.com"
-  },
-  {
-    "image": "images/team/mahash.jpeg",
+    "image": "images/team/mahesh.jpeg",
     "name": "Mahesh Aryal",
     "position": "Developer",
     "linkedin": "https://www.linkedin.com/in/mahesh-aryal-292712135/",
     "email": "mailto:mahesh.aryal@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/nabin.jpeg",
+    "name": "Nabin Thapa",
+    "position": "Developer",
+    "linkedin": "https://www.linkedin.com/in/echonabin/",
+    "email": "mailto:nabin.thapa@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/chandan.jpg",
+    "name": "Chandan Thakur",
+    "position": "Developer",
+    "linkedin": "#",
+    "email": "mailto:chandan.thakur@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/samika.jpeg",
+    "name": "Samika Mali",
+    "position": "Business Development Executive",
+    "linkedin": "https://www.linkedin.com/in/samika-mali/",
+    "email": "mailto:samika.mali@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/nikisha.jpg",
+    "name": "Nikisha Shrestha",
+    "position": "Business Development Executive",
+    "linkedin": "https://www.linkedin.com/in/nikisha-shrestha-2949b7162/",
+    "email": "mailto:nikisha.shrestha@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/sandesh.jpeg",
+    "name": "Sandesh Sen",
+    "position": "Business Development Executive",
+    "linkedin": "https://www.linkedin.com/in/sandesh-sen-a2611919b/",
+    "email": "mailto:sandesh.sen@dakshyanepal.com"
+  },
+  {
+    "image": "images/team/saurav.jpg",
+    "name": "Saurav Shrestha",
+    "position": "Business Development Executive",
+    "linkedin": "https://www.linkedin.com/in/saurav-shrestha-b1b08420b",
+    "email": "mailto:saurav.shrestha@dakshyanepal.com"
   }
 ]

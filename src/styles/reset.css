@@ -3,128 +3,212 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-    line-height: 1;
-    font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  max-width: 1366px;
 }
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 
 *:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 select {
-    background: rgb(255, 255, 255);
-    border: 2px solid rgb(234, 234, 234);
-    border-radius: 4px;
-    padding: 12px;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgb(138, 138, 138);
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(234, 234, 234);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(138, 138, 138);
 }
 
 select:focus {
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
-    border: 2px solid #2F80ED;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+  border: 2px solid #2f80ed;
 }
 
 .blogPost p {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 32px;
-    color: #000000;
-    margin: 32px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin: 32px 0;
 }
 
 .blogPost p strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .blogPost p img {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 .blogPost p em {
-    font-style: italic;
+  font-style: italic;
 }
 
 .blogPost blockquote:before {
-    content: url("/images/quotation.svg");
+  content: url("/images/quotation.svg");
 }
 
-.blogPost blockquote{
-    display: inline;
-    font-style: italic;
-    background: #ffd749;
-    font-size: 20px;
-    line-height: 32px;
-    color: #000000;
+.blogPost blockquote {
+  display: inline;
+  font-style: italic;
+  background: #ffd749;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
 }
 
 .noScrollBar::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .noScrollBar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .mapboxgl-ctrl-bottom-right {
-    display: none;
+  display: none;
 }
 
 .jobDetails strong {
-    font-weight: bold;
-    line-height: 1.1em;
+  font-weight: bold;
+  line-height: 1.1em;
 }
 
-.jobDetails ul{
-    list-style: disc;
-    margin-left: 1.2em;
+.jobDetails ul {
+  list-style: disc;
+  margin-left: 1.2em;
 }

@@ -11,7 +11,10 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta property="og:image" content="https://dakshyanepal.com/images/social.png"></meta>
+        <meta
+          property="og:image"
+          content="https://dakshyanepal.com/images/social.png"
+        ></meta>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
